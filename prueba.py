@@ -1,6 +1,7 @@
 import requests
+import urllib.parse
 
-URL = "https://jsonplaceholder.typicode.com/users/1"
+URL = 'https://jsonplaceholder.typicode.com/users/12'
 response = requests.get(URL)
 
 if response.status_code == 200:
