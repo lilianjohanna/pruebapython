@@ -1,7 +1,7 @@
 import requests
 import urllib.parse
 
-URL = 'https://jsonplaceholder.typicode.com/users'
+URL = 'https://jsonplaceholder.typicode.com/users?'
 params = {
   'id': 7,
   'username': 'Delphine'
