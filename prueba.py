@@ -1,10 +1,10 @@
 import requests
 import urllib.parse
 
-parametro='1'
-parametro2='5'
-URL = 'https://jsonplaceholder.typicode.com/comments?postId='+parametro+'&id='+parametro2
-response = requests.get(URL, parametro)
+id='4'
+nombre='eos est animi quis'
+URL = 'https://jsonplaceholder.typicode.com/comments?postId='+id+'&name='+nombre
+response = requests.get(URL)
 
 if response.status_code == 200:
     print('Solicitud exitosa')
