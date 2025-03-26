@@ -1,8 +1,9 @@
 import requests
 import urllib.parse
 
-parametro = '3'
-URL = 'https://jsonplaceholder.typicode.com/users/'+parametro
+parametro='1'
+parametro2='4'
+URL = 'https://jsonplaceholder.typicode.com/comments?postId='+parametro+'&id='+parametro2
 response = requests.get(URL, parametro)
 
 if response.status_code == 200:
