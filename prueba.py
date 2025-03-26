@@ -1,6 +1,7 @@
 import requests
-
+print("Ingrese el id")
 id=input()
+print("Ingrese el correo electrónico")
 nombre=input()
 URL = 'https://jsonplaceholder.typicode.com/comments?postId='+id+'&email='+nombre
 response = requests.get(URL)
