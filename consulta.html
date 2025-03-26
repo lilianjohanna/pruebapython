@@ -33,7 +33,7 @@
                     method: "GET",
                     url: "https://jsonplaceholder.typicode.com/users",
                 }).done(function(response){
-                    user_list = response.id;
+                    user_list = response.users;
                     for(i = 0; i<user_list.length; i++){
                         tr = "<tr>";
                         tr += "<td>";
