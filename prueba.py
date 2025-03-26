@@ -10,6 +10,10 @@ response = requests.get(URL, params=params)
 
 if response.status_code == 200:
     print('Solicitud exitosa')
+    headers = {
+        'Authorization': 'Bearer <api_key>' 
+    }
+    response = requests.get(URL, headers=headers)
     print('Data:', response.json())
 else:
     print('Error en la solicitud, detalles:', response.text)
