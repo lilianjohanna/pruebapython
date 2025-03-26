@@ -1,5 +1,4 @@
 import requests
-import urllib.parse
 
 id='4'
 nombre='Mariana_Orn@preston.org'
