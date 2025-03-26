@@ -2,8 +2,8 @@ import requests
 import urllib.parse
 
 id='4'
-nombre='eos est animi quis'
-URL = 'https://jsonplaceholder.typicode.com/comments?postId='+id+'&name='+nombre
+nombre='Mariana_Orn@preston.org'
+URL = 'https://jsonplaceholder.typicode.com/comments?postId='+id+'&email='+nombre
 response = requests.get(URL)
 
 if response.status_code == 200:
