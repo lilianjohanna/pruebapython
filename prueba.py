@@ -1,11 +1,11 @@
 import requests
 import urllib.parse
 
-URL = 'https://jsonplaceholder.typicode.com/users?'
 params = {
   'id': 7,
   'username': 'Delphine'
 }
+URL = 'https://jsonplaceholder.typicode.com/users/'+urllib.parse.urlencode(params)
 response = requests.get(URL, params=params)
 
 if response.status_code == 200:
