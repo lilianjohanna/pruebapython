@@ -1,10 +1,7 @@
 import requests
 import urllib.parse
 
-params = {
-  'id': 7,
-  'username': 'Delphine'
-}
+params = 7
 URL = 'https://jsonplaceholder.typicode.com/users/'+urllib.parse.urlencode(params)
 response = requests.get(URL, params=params)
 
