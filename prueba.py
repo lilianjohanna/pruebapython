@@ -1,7 +1,7 @@
 import requests
 
-id='4'
-nombre='Mariana_Orn@preston.org'
+id=input()
+nombre=input()
 URL = 'https://jsonplaceholder.typicode.com/comments?postId='+id+'&email='+nombre
 response = requests.get(URL)
 
