@@ -2,7 +2,7 @@ import requests
 import urllib.parse
 
 parametro = 7
-URL = 'https://jsonplaceholder.typicode.com/users'+urllib.parse.urlencode(parametro)
+URL = 'https://jsonplaceholder.typicode.com/users/'
 response = requests.get(URL, params=parametro)
 
 if response.status_code == 200:
