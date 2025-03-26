@@ -1,9 +1,9 @@
 import requests
 import urllib.parse
 
-params = 7
-URL = 'https://jsonplaceholder.typicode.com/users/'+urllib.parse.urlencode(params)
-response = requests.get(URL, params=params)
+parametro = 7
+URL = 'https://jsonplaceholder.typicode.com/users'+urllib.parse.urlencode(parametro)
+response = requests.get(URL, params=parametro)
 
 if response.status_code == 200:
     print('Solicitud exitosa')
