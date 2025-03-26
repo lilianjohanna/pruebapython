@@ -7,7 +7,7 @@ URL = 'https://jsonplaceholder.typicode.com/comments?postId='+id+'&email='+nombr
 response = requests.get(URL)
 
 if response.status_code == 200:
-    print('Solicitud exitosa')
+    print('Registro encontrado:')
     print('Data:', response.json())
 else:
     print('Error en la solicitud, detalles:', response.text)
